@@ -1,7 +1,7 @@
 FROM elixir:1.3
 
 RUN apt-get update
-RUN apt-get install --yes --quiet software-properties-common apt-transport-https ruby
+RUN apt-get install --yes --quiet software-properties-common apt-transport-https ruby xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3
 
 # Add Node.js apt key
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 68576280
