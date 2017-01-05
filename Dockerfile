@@ -18,5 +18,8 @@ RUN apt-get --yes --force-yes --quiet install nodejs yarn
 # Install Sass
 RUN gem install sass --no-ri --no-rdoc
 
+# Install MySQL
+RUN apt-get --yes --force-yes --quiet install mysql-client
+
 # Clean up
 RUN apt-get autoclean
