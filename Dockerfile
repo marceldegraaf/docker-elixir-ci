@@ -1,4 +1,4 @@
-FROM elixir:1.3
+FROM elixir:1.4
 
 RUN apt-get update
 RUN apt-get install --yes --quiet software-properties-common apt-transport-https ruby xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3
